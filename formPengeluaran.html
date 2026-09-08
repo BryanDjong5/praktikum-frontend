@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="formPengeluaran.css">
+</head>
+<body>
+    <form id="formData">
+        <div class="isi-pengeluaran">
+            <h1>Input Form Expense Tracker</h1>
+            <div class="khusus-image">
+                <img src="img/moneys1.png" alt="uang">
+                <div id="inputPengeluaran">
+                    <div class="inputPengeluaran">
+                        <input type="text" id="nama_pengeluaran" placeholder="masukkan keterangan pengeluaran" name="keterangan">
+                        <input type="number" id="pengeluaran" placeholder="Masukkan nominal pengeluaran" name="pengeluaran">
+                    </div>
+                </div>
+            </div>
+            <button type="button" id="tambahLain">+</button>
+            <button type="button" id="hitungPengeluaran">Hitung</button>
+            <button type="button" id="hapusInput">Hapus Data Input</button>
+            <button type="button" id="hapusHasil">Hapus hasil</button>
+
+            <div id="output"></div>
+    </div>
+    </form>
+
+    <script src="tambahFormPengeluaran.js"></script>
+    <script src="hitungPengeluaran.js"></script>
+</body>
+</html>
