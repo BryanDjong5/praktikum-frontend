@@ -9,9 +9,20 @@ tombolTambah.addEventListener("click", function () {
     dataInput.innerHTML = `
         <input type="text" placeholder="masukkan keterangan pengeluaran" name="keterangan">
         <input type="text" placeholder="Masukkan nominal pengeluaran" name="pengeluaran">
+        <button type="submit" class = "hapusData">Hapus</button>
     `;
 
     inputPengeluaran.appendChild(dataInput);
+});
+
+inputPengeluaran.addEventListener("click", function (e) {
+
+    if (e.target.classList.contains("hapusData")) {
+
+        e.target.parentElement.remove();
+
+    }
+
 });
 
 tombolHapusInput.addEventListener("click", function () {

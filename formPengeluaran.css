@@ -6,6 +6,7 @@ h1 {
 }
 
 body {
+    font-family: Arial, sans-serif;
     background-image: url("img/hamburUang.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -88,6 +89,7 @@ button {
     background-color: rgb(1, 154, 1);
     margin: 0;
     color: white;
+    font-weight: bold;
 }
 
 #hapusInput, #hapusHasil {
@@ -104,5 +106,13 @@ button {
     width: 200px;
     position: absolute;
     left: -70px;
-    top: 150px;  
+    top: 150px; 
+    font-family: "Trebuchet MS", sans-serif; 
+}
+
+.hapusData {
+    background-color: red;
+    width: 70px;
+    margin-left: 10px;
+    margin-bottom: 0;
 }
