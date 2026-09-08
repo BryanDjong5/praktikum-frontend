@@ -14,6 +14,8 @@ TombolHitung.addEventListener("click", function() {
     let cetakan = `
     <h2>Hasil Pengeluaran</h2>`;
 
+    let jumlahData = 0;
+
     for(let p = 0; p < semuaPengeluaran.length; p++){
         const namaPengeluaran = SemuaNamaPengeluaran[p].value;
         const pengeluaran = Number(semuaPengeluaran[p].value);
@@ -23,12 +25,14 @@ TombolHitung.addEventListener("click", function() {
         }
         
         total = total + pengeluaran;
+        jumlahData++;
         cetakan = cetakan + `
         <p>Nama Pengeluaran: ${namaPengeluaran}</p>
         <p>Pengeluaran: ${pengeluaran.toLocaleString("id-ID")}</p>
         `;
     }
     cetakan = cetakan + `
+    <p>Jumlah data pengeluaran: ${jumlahData} </p>
     <p>Total pengeluaran: ${total.toLocaleString("id-ID")}</p>`;
 
     hasilHitungan.innerHTML = cetakan;

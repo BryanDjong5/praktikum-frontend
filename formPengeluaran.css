@@ -9,6 +9,7 @@ body {
     background-image: url("img/hamburUang.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .NIM {
