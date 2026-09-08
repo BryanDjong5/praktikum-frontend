@@ -116,3 +116,19 @@ button {
     margin-left: 10px;
     margin-bottom: 0;
 }
+
+.dataHasil {
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.hapusKotakInput {
+    background-color: red;
+    width: 180px;
+}
+
+.hapusHasilData {
+    background-color: red;
+    width: 70px;
+}

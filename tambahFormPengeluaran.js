@@ -9,7 +9,7 @@ tombolTambah.addEventListener("click", function () {
     dataInput.innerHTML = `
         <input type="text" placeholder="masukkan keterangan pengeluaran" name="keterangan">
         <input type="text" placeholder="Masukkan nominal pengeluaran" name="pengeluaran">
-        <button type="submit" class = "hapusData">Hapus</button>
+        <button type="button" class = "hapusKotakInput">Hapus 1 Kotak Input</button>
     `;
 
     inputPengeluaran.appendChild(dataInput);
@@ -17,7 +17,7 @@ tombolTambah.addEventListener("click", function () {
 
 inputPengeluaran.addEventListener("click", function (e) {
 
-    if (e.target.classList.contains("hapusData")) {
+    if (e.target.classList.contains("hapusKotakInput")) {
 
         e.target.parentElement.remove();
 
@@ -29,7 +29,7 @@ tombolHapusInput.addEventListener("click", function () {
 
     const semuaInput = document.querySelectorAll(".inputPengeluaran");
 
-    if (semuaInput.length > 1) {
-        semuaInput[semuaInput.length - 1].remove();
+    for(let i = 1; i < semuaInput.length; i++){
+        semuaInput[i].remove();
     }
 });
