@@ -6,37 +6,41 @@
     <link rel="stylesheet" href="formPengeluaran.css">
 </head>
 <body>
-    <form id="formData">
-        <div class="isi-pengeluaran">
-            <h1>Input Form Expense Tracker</h1>
-            <div class="NIM">
-            <p>535230124</p>
-            </div>
-            <div class="gambar2">
-                <div class="gambar">
-                    <img src="img/moneys1.png" alt="uang">
-                    <img src="img/kasir1.png" alt="kasir">
+    <div class="wrapper1">
+        <form id="formData">
+            <div class="isi-pengeluaran">
+                <h1>Input Form Expense Tracker</h1>
+                <div class="NIM">
+                    <p>535230124</p>
                 </div>
+                <div class="gambar2">
+                    <div class="gambar">
+                        <img src="img/moneys1.png" alt="uang">
+                        <img src="img/kasir1.png" alt="kasir">
+                    </div>
 
-                <div class="bagianInput">
-                    <div id="inputPengeluaran">
-                        <div class="inputPengeluaran">
-                            <input type="text" id="nama_pengeluaran" placeholder="masukkan keterangan pengeluaran" name="keterangan">
-                            <input type="number" id="pengeluaran" placeholder="Masukkan nominal pengeluaran" name="pengeluaran">
+                    <div class="bagianInput">
+                        <div id="inputPengeluaran">
+                            <div class="inputPengeluaran">
+                                <input type="text" id="nama_pengeluaran" placeholder="masukkan keterangan pengeluaran" name="keterangan">
+                                <input type="number" id="pengeluaran" placeholder="Masukkan nominal pengeluaran" name="pengeluaran">
+                            </div>
+                        </div>
+
+                        <div class="tombol">
+                            <button type="button" id="tambahLain">+</button>
+                            <button type="button" id="hitungPengeluaran">Hitung</button>
+                            <button type="button" id="hapusInput">Hapus Semua Kotak Input</button>
+                            <button type="button" id="hapusHasil">Hapus semua Data Pengeluaran</button>
                         </div>
                     </div>
-
-                    <div class="tombol">
-                        <button type="button" id="tambahLain">+</button>
-                        <button type="button" id="hitungPengeluaran">Hitung</button>
-                        <button type="button" id="hapusInput">Hapus Semua Kotak Input</button>
-                        <button type="button" id="hapusHasil">Hapus semua Data Pengeluaran</button>
-                    </div>
                 </div>
             </div>
-        </div>
+        </form>
+
         <div id="output"></div>
-    </form>
+    </div>
+
     <script src="tambahFormPengeluaran.js"></script>
     <script src="hitungPengeluaran.js"></script>
 </body>
